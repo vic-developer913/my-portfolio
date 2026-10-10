@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Annie Kapimpa ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f0a1a;
+  color:#fff;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+/* SHINING BACKGROUND */
+.bg{
+  position:fixed;inset:0;
+  background:radial-gradient(circle at 20% 30%, #ff2e8a 0%, transparent 40%),
+             radial-gradient(circle at 80% 20%, #7c3cff 0%, transparent 40%),
+             radial-gradient(circle at 50% 80%, #ff8a2e 0%, transparent 40%),
+             radial-gradient(circle at 10% 90%, #00e5ff 0%, transparent 30%);
+  filter:blur(40px);opacity:0.6;z-index:-2;
+}
+.stars{position:fixed;inset:0;z-index:-1}
+.star{position:absolute;width:2px;height:2px;background:white;border-radius:50%;animation:twinkle 2s infinite}
+@keyframes twinkle{0%,100%{opacity:0.2;transform:scale(1)}50%{opacity:1;transform:scale(1.8)}}
+
+/* HERO */
+.container{max-width:1100px;margin:0 auto;padding:40px 6%;text-align:center}
+.badge{display:inline-block;padding:8px 20px;border-radius:100px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(10px);letter-spacing:3px;font-size:12px;margin-bottom:20px;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(60px,10vw,120px);
+  line-height:0.9;
+  background:linear-gradient(90deg, #ffd700, #ff7eb3, #ff2e8a, #ffd700);
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shine 3s linear infinite;
+  filter:drop-shadow(0 0 30px rgba(255,46,138,0.5));
+}
+@keyframes shine{to{background-position:200% center}}
+
+.name{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(50px,8vw,90px);
+  color:#fff;
+  text-shadow:0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,46,138,0.6);
+  margin-top:-10px;
+}
+.subtitle{
+  font-size:clamp(18px,3vw,26px);
+  font-weight:300;
+  letter-spacing:1px;
+  margin:20px auto;
+  color:#ffe3f0;
+  max-width:700px;
+  line-height:1.6;
+}
+
+/* GLASS CARD */
+.card{
+  margin:50px auto;
+  max-width:800px;
+  padding:40px;
+  border-radius:30px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  border:1px solid rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+  position:relative;
+  overflow:hidden;
+}
+.card::before{
+  content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+  background:linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.15) 50%, transparent 80%);
+  animation:glare 4s infinite;
+}
+@keyframes glare{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.message{
+  font-size:18px;
+  line-height:1.9;
+  color:#fff;
+  font-weight:300;
+}
+.message b{
+  font-weight:700;
+  background:linear-gradient(90deg,#ffd700,#ff8a2e);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hearts{font-size:36px;letter-spacing:12px;margin:25px 0;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+
+.btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{
+  padding:14px 32px;border-radius:100px;border:none;font-weight:700;cursor:pointer;
+  font-size:15px;letter-spacing:1px;transition:0.3s;
+}
+.btn-gold{
+  background:linear-gradient(90deg,#ffd700,#ff8a2e);
+  color:#000;
+  box-shadow:0 10px 30px rgba(255,215,0,0.4);
+}
+.btn-gold:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 15px 40px rgba(255,215,0,0.6)}
+.btn-glass{
+  background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);
+  backdrop-filter:blur(10px);
+}
+.btn-glass:hover{background:rgba(255,255,255,0.2)}
+
+/* PHOTOS */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:50px}
+.g-item{
+  height:160px;border-radius:20px;
+  background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.1);
+  display:grid;place-items:center;font-size:40px;
+  transition:0.4s;
+}
+.g-item:hover{transform:translateY(-8px) rotate(2deg);background:linear-gradient(135deg, rgba(255,46,138,0.2), rgba(124,60,255,0.2))}
+
+footer{margin-top:60px;padding:30px;color:rgba(255,255,255,0.5);font-size:13px;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="stars" id="stars"></div>
+
+<div class="container">
+  <div class="badge">✨  TODAY IS YOUR SPECIAL DAY ✨</div>
+  
+  <h1>Happy Birthday</h1>
+  <div class="name">Annie Kapimpa</div>
+  
+  <p class="subtitle">My Lovely Woman 💖 — The most beautiful soul in my world</p>
+
+  <div class="hearts">💖 💝 💖 💝 💖</div>
+
+  <div class="card">
+    <p class="message">
+      My dearest <b>Annie Kapimpa</b>,<br><br>
+      On this magical day, I just want you to know how <b>lovely, amazing, and precious</b> you are to me.<br><br>
+      Your smile shines brighter than all the stars ✨, your love is my greatest gift 🎁<br><br>
+      May your birthday be filled with <b>laughter, shining colors, endless joy</b> and all the love you deserve.<br><br>
+      You are my queen, my happiness, my everything.<br><br>
+      <span style="font-family:'Great Vibes';font-size:34px;color:#ffd700">Forever yours, Victor ❤️</span>
+    </p>
+
+    <div class="btns">
+      <button class="btn btn-gold" onclick="celebrate()">CELEBRATE ANNIE 🎉</button>
+      <button class="btn btn-glass" onclick="playMusic()">PLAY OUR SONG 🎵</button>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="g-item">🌹</div>
+    <div class="g-item">💎</div>
+    <div class="g-item">👑</div>
+  </div>
+
+  <footer>MADE WITH ALL MY LOVE FOR ANNIE KAPIMPA • 2026</footer>
+</div>
+
+<script>
+// create twinkling stars
+const starsBox = document.getElementById('stars');
+for(let i=0;i<100;i++){
+  let s=document.createElement('div');
+  s.className='star';
+  s.style.left=Math.random()*100+'%';
+  s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=Math.random()*2+'s';
+  starsBox.appendChild(s);
+}
+
+function celebrate(){
+  for(let i=0;i<80;i++){
+    let conf=document.createElement('div');
+    conf.style.position='fixed';
+    conf.style.left=Math.random()*100+'vw';
+    conf.style.top='-10px';
+    conf.style.fontSize='20px';
+    conf.innerHTML=['💖','✨','🎉','🌹','💝','🎂'][Math.floor(Math.random()*6)];
+    conf.style.animation=`fall ${3+Math.random()*3}s linear forwards`;
+    document.body.appendChild(conf);
+    setTimeout(()=>conf.remove(),5000);
+  }
+  // create style for falling
+  if(!document.getElementById('fallStyle')){
+    let style=document.createElement('style');
+    style.id='fallStyle';
+    style.innerHTML='@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}';
+    document.head.appendChild(style);
+  }
+}
+
+function playMusic(){
+  celebrate();
+  alert('🎶 Happy Birthday my lovely Annie! 🎶\n\nThis song is for you: You are my sunshine, my only sunshine!');
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Annie Kapimpa ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f0a1a;
+  color:#fff;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+/* SHINING BACKGROUND */
+.bg{
+  position:fixed;inset:0;
+  background:radial-gradient(circle at 20% 30%, #ff2e8a 0%, transparent 40%),
+             radial-gradient(circle at 80% 20%, #7c3cff 0%, transparent 40%),
+             radial-gradient(circle at 50% 80%, #ff8a2e 0%, transparent 40%),
+             radial-gradient(circle at 10% 90%, #00e5ff 0%, transparent 30%);
+  filter:blur(40px);opacity:0.6;z-index:-2;
+}
+.stars{position:fixed;inset:0;z-index:-1}
+.star{position:absolute;width:2px;height:2px;background:white;border-radius:50%;animation:twinkle 2s infinite}
+@keyframes twinkle{0%,100%{opacity:0.2;transform:scale(1)}50%{opacity:1;transform:scale(1.8)}}
+
+/* HERO */
+.container{max-width:1100px;margin:0 auto;padding:40px 6%;text-align:center}
+.badge{display:inline-block;padding:8px 20px;border-radius:100px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(10px);letter-spacing:3px;font-size:12px;margin-bottom:20px;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(60px,10vw,120px);
+  line-height:0.9;
+  background:linear-gradient(90deg, #ffd700, #ff7eb3, #ff2e8a, #ffd700);
+  background-size:200% auto;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shine 3s linear infinite;
+  filter:drop-shadow(0 0 30px rgba(255,46,138,0.5));
+}
+@keyframes shine{to{background-position:200% center}}
+
+.name{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(50px,8vw,90px);
+  color:#fff;
+  text-shadow:0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,46,138,0.6);
+  margin-top:-10px;
+}
+.subtitle{
+  font-size:clamp(18px,3vw,26px);
+  font-weight:300;
+  letter-spacing:1px;
+  margin:20px auto;
+  color:#ffe3f0;
+  max-width:700px;
+  line-height:1.6;
+}
+
+/* GLASS CARD */
+.card{
+  margin:50px auto;
+  max-width:800px;
+  padding:40px;
+  border-radius:30px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  border:1px solid rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+  position:relative;
+  overflow:hidden;
+}
+.card::before{
+  content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+  background:linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.15) 50%, transparent 80%);
+  animation:glare 4s infinite;
+}
+@keyframes glare{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+.message{
+  font-size:18px;
+  line-height:1.9;
+  color:#fff;
+  font-weight:300;
+}
+.message b{
+  font-weight:700;
+  background:linear-gradient(90deg,#ffd700,#ff8a2e);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hearts{font-size:36px;letter-spacing:12px;margin:25px 0;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+
+.btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{
+  padding:14px 32px;border-radius:100px;border:none;font-weight:700;cursor:pointer;
+  font-size:15px;letter-spacing:1px;transition:0.3s;
+}
+.btn-gold{
+  background:linear-gradient(90deg,#ffd700,#ff8a2e);
+  color:#000;
+  box-shadow:0 10px 30px rgba(255,215,0,0.4);
+}
+.btn-gold:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 15px 40px rgba(255,215,0,0.6)}
+.btn-glass{
+  background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);
+  backdrop-filter:blur(10px);
+}
+.btn-glass:hover{background:rgba(255,255,255,0.2)}
+
+/* PHOTOS */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:50px}
+.g-item{
+  height:160px;border-radius:20px;
+  background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.1);
+  display:grid;place-items:center;font-size:40px;
+  transition:0.4s;
+}
+.g-item:hover{transform:translateY(-8px) rotate(2deg);background:linear-gradient(135deg, rgba(255,46,138,0.2), rgba(124,60,255,0.2))}
+
+footer{margin-top:60px;padding:30px;color:rgba(255,255,255,0.5);font-size:13px;letter-spacing:2px}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="stars" id="stars"></div>
+
+<div class="container">
+  <div class="badge">✨  TODAY IS YOUR SPECIAL DAY ✨</div>
+  
+  <h1>Happy Birthday</h1>
+  <div class="name">Annie Kapimpa</div>
+  
+  <p class="subtitle">My Lovely Woman 💖 — The most beautiful soul in my world</p>
+
+  <div class="hearts">💖 💝 💖 💝 💖</div>
+
+  <div class="card">
+    <p class="message">
+      My dearest <b>Annie Kapimpa</b>,<br><br>
+      On this magical day, I just want you to know how <b>lovely, amazing, and precious</b> you are to me.<br><br>
+      Your smile shines brighter than all the stars ✨, your love is my greatest gift 🎁<br><br>
+      May your birthday be filled with <b>laughter, shining colors, endless joy</b> and all the love you deserve.<br><br>
+      You are my queen, my happiness, my everything.<br><br>
+      <span style="font-family:'Great Vibes';font-size:34px;color:#ffd700">Forever yours, Victor ❤️</span>
+    </p>
+
+    <div class="btns">
+      <button class="btn btn-gold" onclick="celebrate()">CELEBRATE ANNIE 🎉</button>
+      <button class="btn btn-glass" onclick="playMusic()">PLAY OUR SONG 🎵</button>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="g-item">🌹</div>
+    <div class="g-item">💎</div>
+    <div class="g-item">👑</div>
+  </div>
+
+  <footer>MADE WITH ALL MY LOVE FOR ANNIE KAPIMPA • 2026</footer>
+</div>
+
+<script>
+// create twinkling stars
+const starsBox = document.getElementById('stars');
+for(let i=0;i<100;i++){
+  let s=document.createElement('div');
+  s.className='star';
+  s.style.left=Math.random()*100+'%';
+  s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=Math.random()*2+'s';
+  starsBox.appendChild(s);
+}
+
+function celebrate(){
+  for(let i=0;i<80;i++){
+    let conf=document.createElement('div');
+    conf.style.position='fixed';
+    conf.style.left=Math.random()*100+'vw';
+    conf.style.top='-10px';
+    conf.style.fontSize='20px';
+    conf.innerHTML=['💖','✨','🎉','🌹','💝','🎂'][Math.floor(Math.random()*6)];
+    conf.style.animation=`fall ${3+Math.random()*3}s linear forwards`;
+    document.body.appendChild(conf);
+    setTimeout(()=>conf.remove(),5000);
+  }
+  // create style for falling
+  if(!document.getElementById('fallStyle')){
+    let style=document.createElement('style');
+    style.id='fallStyle';
+    style.innerHTML='@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}';
+    document.head.appendChild(style);
+  }
+}
+
+function playMusic(){
+  celebrate();
+  alert('🎶 Happy Birthday my lovely Annie! 🎶\n\nThis song is for you: You are my sunshine, my only sunshine!');
+}
+</script>
+
+</body>
+</html>
